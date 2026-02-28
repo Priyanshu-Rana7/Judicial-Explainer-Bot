@@ -1,0 +1,105 @@
+DOCUMENT: Court Hearings – What Happens During a Hearing
+SOURCE: Code of Civil Procedure, 1908 (CPC) and Code of Criminal Procedure, 1973 (CrPC)
+
+=== WHAT IS A COURT HEARING? ===
+
+A court hearing is a formal session where the judge, lawyers, and parties appear before the court to conduct the legal proceedings. Different stages of a case involve different types of hearings.
+
+=== TYPES OF HEARINGS IN A CIVIL CASE ===
+
+1. FIRST HEARING (Return/Admission Hearing)
+   - The court examines the plaint for admission.
+   - If admitted, the suit is numbered and summons are issued to the defendant.
+   - Date is given for the defendant's appearance.
+
+2. APPEARANCE OF DEFENDANT
+   - Defendant appears (personally or through advocate).
+   - Files Vakalatnama (authority letter for advocate).
+   - Is given time to file Written Statement.
+
+3. WRITTEN STATEMENT HEARING
+   - Written Statement is filed by the defendant.
+   - Plaintiff may file a Replication (reply to written statement).
+   - Court may pass interim orders (e.g., ad interim injunction) if urgently needed.
+
+4. FRAMING OF ISSUES HEARING
+   - Both parties present pleadings.
+   - Court frames issues — specific questions of fact and law to be decided.
+   - This is a critical hearing; issues define the scope of the trial.
+
+5. EVIDENCE HEARINGS (Several dates)
+   - Plaintiff's side: witnesses appear, file affidavits, are cross-examined.
+   - Court records evidence in writing.
+   - After all plaintiff witnesses are done, defendant leads evidence.
+   - Evidence is concluded with a formal order closing evidence.
+
+6. ARGUMENTS HEARING
+   - Advocates for both sides present oral arguments based on evidence and law.
+   - Written synopses / notes of arguments may be submitted.
+
+7. JUDGMENT HEARING
+   - Court pronounces its judgment on a fixed date.
+   - Judge reads the operative part; full judgment may be uploaded later.
+
+=== TYPES OF HEARINGS IN A CRIMINAL CASE ===
+
+1. REMAND HEARING
+   - Held immediately after arrest.
+   - Police produce the arrested accused before the Magistrate within 24 hours (Article 22, Constitution; Section 57, CrPC).
+   - Court decides whether to grant police custody (PC) or judicial custody (JC).
+   - Bail application is often made at this stage.
+
+2. BAIL HEARING
+   - Accused or their advocate argues for bail.
+   - Prosecution opposes bail citing gravity of offence, flight risk, witness tampering risk.
+   - Court grants or refuses bail with or without conditions.
+
+3. CHARGESHEET COGNIZANCE HEARING
+   - Police file chargesheet; court takes cognizance.
+   - Summons or warrant is issued to the accused.
+
+4. CHARGE FRAMING HEARING
+   - Court and parties consider whether charges should be framed.
+   - Accused may apply for discharge.
+   - If charges framed, accused pleads guilty or not guilty.
+
+5. PROSECUTION EVIDENCE HEARINGS
+   - Public Prosecutor examines witnesses.
+   - Defence cross-examines each prosecution witness.
+   - Documentary evidence (exhibits) are formally produced and marked.
+
+6. SECTION 313 STATEMENT HEARING
+   - After prosecution evidence, accused is examined by the court.
+   - Court puts each incriminating piece of evidence to the accused and records their response.
+   - Accused cannot refuse to answer (no oath; answers not treated as evidence against them).
+
+7. DEFENCE EVIDENCE HEARINGS
+   - Accused may lead their own witnesses.
+
+8. ARGUMENTS AND JUDGMENT
+   - Final arguments by Public Prosecutor and defence counsel.
+   - Court pronounces judgment: Acquittal or Conviction.
+   - If convicted, separate sentencing hearing may be held.
+
+=== GENERAL HEARING ETIQUETTE ===
+
+- All persons must rise when the judge enters or exits.
+- Address the court as "Your Honour" (subordinate courts) or "My Lord / Milord" (High Court / Supreme Court).
+- Advocates wear prescribed dress: black coat / gown, white shirt, white bands.
+- Mobile phones must be silent or switched off.
+- Court proceedings are recorded in the order sheet (Roznama).
+- Adjournments: when neither party is ready or a witness is unavailable, the case is adjourned to the next working day.
+
+=== MENTION AND URGENT HEARINGS ===
+
+- A party may "mention" a matter before the court at the beginning of the day's list to draw attention to urgency.
+- Courts have an urgent/mentioning roster for urgent injunction applications.
+
+=== ORDER SHEET (ROZNAMA) ===
+
+Every hearing result is recorded on the Order Sheet:
+- Date of hearing.
+- Who appeared (advocate names).
+- What happened (evidence recorded, arguments heard, adjournment granted).
+- Next date and purpose of next hearing.
+Parties can obtain certified copies of order sheets.

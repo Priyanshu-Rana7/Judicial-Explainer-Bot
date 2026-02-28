@@ -1,0 +1,95 @@
+DOCUMENT: Civil Case Filing Process in India
+SOURCE: Code of Civil Procedure, 1908 (CPC) – Filing and Procedure
+
+=== HOW TO FILE A CIVIL CASE IN INDIA ===
+
+A civil case is filed under the Code of Civil Procedure, 1908 (CPC). The person who files the case is called the PLAINTIFF; the person against whom it is filed is the DEFENDANT.
+
+--- STEP 1: IDENTIFY THE CAUSE OF ACTION ---
+A cause of action is the set of facts that entitles the plaintiff to seek relief from the court.
+It must have arisen within the period of limitation (Limitation Act, 1963).
+Common civil causes of action: breach of contract, property disputes, recovery of money, matrimonial disputes.
+
+--- STEP 2: DETERMINE THE APPROPRIATE COURT ---
+- Pecuniary jurisdiction: file in the court whose monetary limit covers the value of the claim.
+- Territorial jurisdiction (Order 7, CPC): file in the court where:
+  - the defendant resides, carries on business, or personally works for gain; OR
+  - the cause of action (wholly or partly) arose.
+- Subject-matter jurisdiction: ensure the court is empowered to hear that type of case.
+
+--- STEP 3: PREPARE THE PLAINT ---
+A Plaint is the written statement of the plaintiff's claim (Order 7, CPC). It must contain:
+1. Name of the court.
+2. Name, description, and address of the plaintiff.
+3. Name, description, and address of the defendant.
+4. Facts constituting the cause of action and when it arose.
+5. Facts showing the court has jurisdiction.
+6. Relief(s) claimed by the plaintiff (e.g., money, injunction, declaration).
+7. Statement of value of the suit for purposes of court fees and jurisdiction.
+8. Signature and verification by the plaintiff.
+
+--- STEP 4: PAY COURT FEES ---
+Court fees are paid under the Court Fees Act, 1870.
+Fees are calculated as a percentage of the suit value (ad valorem) or as fixed fees for specific reliefs.
+Insufficient court fees will result in the plaint being returned for correction.
+
+--- STEP 5: FILE THE PLAINT (Institution of Suit) ---
+The plaint is presented to the filing counter of the appropriate court.
+Along with the plaint, the plaintiff must file:
+  - Vakalatnama (if represented by an advocate).
+  - Copies of all documents relied upon (listed in a document schedule).
+  - Copies of the plaint for service on each defendant.
+Court staff number the plaint and assign a Case Number (Civil Suit No.).
+
+--- STEP 6: SCRUTINY AND ADMISSION ---
+The court examines the plaint under Order 7, Rule 9–13 CPC:
+- If the plaint is in order → the suit is admitted and a case number is assigned.
+- If defective → the plaint is returned with instructions to correct (Order 7, Rule 10).
+- If frivolous or discloses no cause of action → rejected (Order 7, Rule 11).
+
+--- STEP 7: ISSUANCE OF SUMMONS TO DEFENDANT ---
+Once admitted, the court issues Summons to the defendant (Order 5, CPC).
+The summons requires the defendant to appear before the court on a specified date.
+Methods of service:
+  a. Personal service (court bailiff or process server delivers directly).
+  b. Registered post with acknowledgement due (RPAD).
+  c. Substituted service (affixing at defendant's last known address) if personal service fails.
+  d. Publication in newspaper (in exceptional cases).
+
+--- STEP 8: DEFENDANT'S WRITTEN STATEMENT ---
+After receiving summons, the defendant files a Written Statement within 30 days (extendable to 90 days maximum) – Order 8, CPC.
+The written statement denies or admits each allegation in the plaint.
+The defendant may also raise preliminary objections (e.g., lack of jurisdiction, limitation).
+The defendant may file a Counter-claim against the plaintiff in the same written statement.
+
+--- STEP 9: FRAMING OF ISSUES ---
+The court frames Issues of Fact and Issues of Law based on the pleadings (Order 14, CPC).
+Issues are the specific questions the court needs to decide.
+Example issue: "Whether the plaintiff is entitled to recover ₹5 lakhs from the defendant for breach of contract dated 01-01-2020?"
+
+--- STEP 10: DISCOVERY AND INSPECTION ---
+Parties may seek discovery of documents from the other side (Order 11, CPC).
+The court may order inspection of documents.
+
+--- STEP 11: EVIDENCE STAGE ---
+Plaintiff's Evidence: Plaintiff leads evidence first by filing affidavits of witnesses.
+Examination-in-chief is by affidavit; witnesses are cross-examined by the opposite party.
+After plaintiff's evidence, defendant leads their evidence similarly.
+
+--- STEP 12: ARGUMENTS ---
+After evidence is complete, both parties present oral arguments.
+Written arguments / brief notes may also be submitted.
+
+--- STEP 13: JUDGMENT AND DECREE ---
+The court pronounces its Judgment (reasoning) and passes a Decree (operative order).
+The decree specifies the relief granted or denied.
+A certified copy of the decree can be obtained from the court.
+
+--- STEP 14: EXECUTION OF DECREE ---
+If the losing party does not comply voluntarily, the winning party can file an Execution Petition (Order 21, CPC) to enforce the decree.
+Methods include attachment of property, arrest of judgment debtor, or garnishee orders.
+
+--- APPEAL ---
+A decree by a subordinate court can be appealed to a higher court (First Appeal).
+A second appeal lies to the High Court on a substantial question of law.
+Time limit for appeal: 30 days from the date of decree for District Court appeals; 90 days for High Court appeals (Limitation Act).

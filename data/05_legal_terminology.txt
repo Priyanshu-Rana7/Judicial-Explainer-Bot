@@ -1,0 +1,102 @@
+DOCUMENT: Legal Terminology – Summons, Warrants, Notices, and Writs
+SOURCE: Code of Civil Procedure, 1908 (CPC); Code of Criminal Procedure, 1973 (CrPC); Constitution of India
+
+=== WHAT IS A SUMMONS? ===
+
+A Summons is a formal written notice issued by a court directing a person to appear before it on a specified date and time.
+
+PURPOSE OF SUMMONS:
+1. To appear as a party (defendant in civil suit, accused in criminal case).
+2. To appear as a witness to give testimony.
+3. To produce a document before the court.
+
+CIVIL SUMMONS (Order 5, CPC):
+- Issued to the defendant after the plaint is admitted.
+- Requires the defendant to appear and answer the plaintiff's claim.
+- Contains: name of defendant, date and time of appearance, court details, case number.
+- Signed by the presiding judge and sealed with the court seal.
+- Served through: court bailiff (personal service), registered post (RPAD), substituted service.
+- If the defendant ignores the summons → court may proceed ex-parte (in the absence of the defendant).
+
+CRIMINAL SUMMONS (Section 61–69, CrPC):
+- Issued to the accused in summons-cases or as the first process for moderate offences.
+- Also issued to witnesses to appear and testify.
+- Service: through police officer, court officer, or post.
+- Non-compliance → a warrant of arrest may be issued.
+
+=== WHAT IS A WARRANT? ===
+
+A Warrant is a written order issued by a court directing the police to arrest and produce a person before the court.
+
+Issued when:
+- The accused is evading summons.
+- The offence is serious (warrant-case).
+- The court has reason to believe arrest is necessary.
+
+Types:
+1. Bailable Warrant: Police must release the person on furnishing surety/bail.
+2. Non-Bailable Warrant (NBW): Police must produce the person in court; bail is at the court's discretion only.
+3. Warrant for attachment of property: Used in civil execution to attach property of judgment debtor.
+
+Execution of Warrant: The warrant is handed to a police officer who must show the warrant to the person being arrested.
+
+=== WHAT IS A NOTICE? ===
+
+A Notice is a formal communication informing a party about:
+- A legal action being taken or to be taken.
+- Requiring a response or action within a specified time.
+
+Legal Notice (Section 80 CPC): Mandatory in suits against the Government; must be sent 2 months before filing suit.
+Notice to Produce (Section 66 CPC): Requires a party to produce a document.
+Show Cause Notice: Court / authority directs a person to explain why action should not be taken against them.
+
+=== WHAT IS AN INJUNCTION? ===
+
+An Injunction is a court order directing a party to do or refrain from doing a specific act.
+
+Types:
+1. Temporary Injunction (Order 39, CPC): Granted during pendency of the suit to maintain status quo.
+   - Conditions: Prima facie case, balance of convenience favours plaintiff, irreparable injury if not granted.
+2. Perpetual Injunction: Granted by the final decree.
+3. Mandatory Injunction: Orders positive action (e.g., restore possession).
+4. Ad-interim Injunction: Granted ex-parte (without hearing the other side) in urgent cases; valid till the next date.
+
+=== WHAT IS AN INTERLOCUTORY ORDER? ===
+
+An Interlocutory Order is a temporary order passed by the court during the pendency of a case to regulate proceedings or protect parties.
+Examples: Stay order, injunction, attachment before judgment, appointment of a receiver.
+
+=== WHAT IS A WRIT? ===
+
+A Writ is an order issued by a High Court (Article 226) or the Supreme Court (Article 32) to enforce fundamental rights or correct jurisdictional errors.
+
+Types of Writs:
+1. Habeas Corpus ("you shall have the body"): Directs immediate production of an illegally detained person before the court.
+2. Mandamus ("we command"): Orders a public authority to perform a public duty it has refused to perform.
+3. Prohibition: Prevents an inferior court from exceeding its jurisdiction.
+4. Certiorari: Quashes an order of an inferior court or tribunal that exceeded jurisdiction or violated natural justice.
+5. Quo Warranto ("by what authority"): Challenges a person's claim to hold a public office.
+
+=== WHAT IS A DECREE? ===
+
+A Decree is the formal expression of the court's adjudication on the matters in dispute in a civil case.
+Types:
+1. Preliminary Decree: Requires further proceedings before a final decree can be made (e.g., in partition suits).
+2. Final Decree: Completely disposes of the suit.
+Decree specifies: who wins, what relief is granted, costs.
+
+=== WHAT IS A JUDGMENT? ===
+
+A Judgment is the reasoned decision of the court explaining the facts found, law applied, and conclusion reached. The decree is extracted from the judgment.
+
+=== WHAT IS AN AFFIDAVIT? ===
+
+An Affidavit is a sworn written statement of facts, signed by the deponent (maker) before an oath commissioner or notary public. Used to present evidence in courts.
+
+=== WHAT IS VAKALATNAMA? ===
+
+A Vakalatnama is a written authority given by a party to an advocate authorising the advocate to appear and act on their behalf in court proceedings.
+
+=== WHAT IS CAVEAT? ===
+
+A Caveat (Section 148A, CPC) is a notice filed by a person to the court requesting that no order be passed in a matter without first hearing them. Prevents ex-parte orders against the caveator.

@@ -1,0 +1,123 @@
+DOCUMENT: Criminal Case Process in India
+SOURCE: Code of Criminal Procedure, 1973 (CrPC) – Criminal Justice Workflow
+
+=== CRIMINAL CASE PROCESS IN INDIA ===
+
+Criminal cases in India are governed by the Code of Criminal Procedure, 1973 (CrPC).
+The government (State) prosecutes the accused through the Public Prosecutor.
+The burden of proof is on the prosecution: "Beyond Reasonable Doubt."
+
+=== STAGE 1: FIR (FIRST INFORMATION REPORT) ===
+
+An FIR is registered when a cognizable offence is reported to the police (Section 154, CrPC).
+A cognizable offence is one where police can arrest without a warrant (e.g., murder, robbery, rape).
+For non-cognizable offences (e.g., assault, cheating below threshold), a complaint is filed before a Magistrate.
+
+How to file an FIR:
+1. Go to the police station having jurisdiction over the place of offence.
+2. Give information orally or in writing.
+3. The officer-in-charge reduces it to writing and reads it back.
+4. The informant signs / puts thumb impression.
+5. A copy of the FIR is given free of cost to the informant.
+Zero FIR: An FIR can be registered at any police station regardless of jurisdiction and transferred later.
+
+=== STAGE 2: POLICE INVESTIGATION ===
+
+After FIR, the police investigate under Chapter XII of CrPC.
+Steps:
+- Visit the scene of crime (panchnama / inquest report).
+- Recording of witness statements (Section 161, CrPC).
+- Arrest of accused (with or without warrant, depending on cognizability).
+- Seizure of evidence and preparation of seizure memo.
+- Medical examination (Section 164A for victims of sexual assault).
+- Interrogation of accused (no coercive methods allowed).
+- Remand: Police may seek judicial custody (remand) from a Magistrate for further interrogation.
+  - Police custody: maximum 15 days.
+  - Judicial custody (jail): can continue till chargesheet / trial.
+
+=== STAGE 3: CHARGESHEET (POLICE REPORT) ===
+
+On completion of investigation, the police file a Chargesheet (Section 173, CrPC) before the Magistrate.
+The chargesheet contains: FIR, witness statements, expert reports, and a list of accused and charges.
+If the police find insufficient evidence → they file a 'Closure Report' / 'Final Report'.
+The complainant can file a 'Protest Petition' against a Closure Report.
+
+=== STAGE 4: COGNIZANCE BY COURT ===
+
+The Magistrate takes cognizance of the offence (Section 190, CrPC) — this means the court formally acknowledges the case.
+Sources of cognizance:
+  a. Police report (chargesheet).
+  b. Complaint by a private person.
+  c. Magistrate's own knowledge.
+
+=== STAGE 5: ISSUANCE OF PROCESS ===
+
+After cognizance, the court issues:
+- Summons: for summons-cases (less serious, punishable up to 2 years).
+  The accused is called to appear before the court.
+- Warrant: for warrant-cases (serious offences, punishable with more than 2 years).
+  A bailable or non-bailable warrant is issued for arrest.
+
+=== STAGE 6: BAIL ===
+
+Bail is the temporary release of an accused pending trial.
+Types:
+- Bailable offence (Schedule I, CrPC): Bail is a right; police or court must grant it.
+- Non-bailable offence: Bail is at the court's discretion (Section 437 CrPC for Sessions Court; Section 439 for High Court / Sessions Court).
+- Anticipatory Bail (Section 438 CrPC): Applied before arrest, granted by Sessions Court or High Court.
+- Default Bail (Section 167(2) CrPC): Accused is entitled to bail if chargesheet is not filed within:
+  - 60 days for offences punishable with death, life imprisonment, or ≥10 years.
+  - 90 days for other offences.
+Bail conditions may include surety, restricting travel, and periodic reporting.
+
+=== STAGE 7: FRAMING OF CHARGES ===
+
+After hearing the accused and the prosecution, the court frames Charges.
+If the court finds no prima facie case → it discharges the accused (Section 227 CrPC).
+If charges are framed → the accused is asked to plead guilty or not guilty.
+If the accused pleads guilty → the court may convict directly.
+If the accused pleads not guilty → the case proceeds to trial.
+
+=== STAGE 8: TRIAL ===
+
+The trial procedure depends on the type of case:
+A. SESSIONS TRIAL (most serious offences):
+   1. Public Prosecutor opens the case.
+   2. Prosecution evidence: witnesses are examined, cross-examined, re-examined.
+   3. Statement of accused (Section 313 CrPC): accused is examined by the court; no sworn oath.
+   4. Defence evidence: accused can lead witnesses.
+   5. Arguments by both sides.
+   6. Judgment by the court.
+
+B. WARRANT CASE (moderately serious):
+   - Similar to Sessions Trial; heard in Magistrate's Court.
+
+C. SUMMONS CASE (less serious):
+   - Simplified procedure.
+   - Magistrate reads charges; accused pleads.
+   - Evidence and judgment follow.
+
+=== STAGE 9: JUDGMENT ===
+
+After arguments, the court pronounces its Judgment.
+If ACQUITTED: the accused is released; cannot be tried again for the same offence (double jeopardy — Article 20(2), Constitution).
+If CONVICTED: the court hears arguments on sentencing and passes a Sentence.
+Sentences: imprisonment (rigorous or simple), fine, probation, or both.
+
+=== STAGE 10: APPEAL ===
+
+Against acquittal: State / complainant can appeal to a higher court.
+Against conviction: Accused can appeal.
+Appeal hierarchy:
+  - Magistrate → Sessions Court (first appeal).
+  - Sessions Court → High Court.
+  - High Court → Supreme Court (special leave petition under Article 136).
+Time limit: 30 days from judgment (extendable with sufficient cause).
+
+=== OTHER IMPORTANT PROVISIONS ===
+
+Section 482 CrPC – Inherent powers of High Court to quash FIRs and criminal proceedings.
+Section 320 CrPC – Compounding of offences (settlement between parties for minor offences).
+Section 125 CrPC – Maintenance: a Magistrate can order maintenance for wife, children, and parents.
+Witness Protection: Courts can order identity protection for sensitive witnesses.
+Victim Statement: Courts record victim impact statements before sentencing.

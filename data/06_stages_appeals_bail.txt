@@ -1,0 +1,139 @@
+DOCUMENT: Court Case Stages, Appeals, Bail, and Special Procedures
+SOURCE: Code of Civil Procedure, 1908 (CPC); Code of Criminal Procedure, 1973 (CrPC); Indian Evidence Act, 1872
+
+=== DIFFERENT STAGES OF A COURT CASE ===
+
+A court case passes through the following broad stages:
+
+CIVIL CASE STAGES:
+Stage 1: Plaint Filing (Institution of Suit)
+Stage 2: Scrutiny and Admission
+Stage 3: Service of Summons on Defendant
+Stage 4: Appearance of Defendant; Filing of Written Statement
+Stage 5: Filing of Replication (if any) by Plaintiff
+Stage 6: Framing of Issues
+Stage 7: Evidence – Plaintiff's evidence (PW1, PW2…)
+Stage 8: Evidence – Defendant's evidence (DW1, DW2…)
+Stage 9: Arguments
+Stage 10: Judgment and Decree
+Stage 11: Execution (if needed)
+Stage 12: Appeal (optional)
+
+CRIMINAL CASE STAGES:
+Stage 1: FIR / Complaint
+Stage 2: Police Investigation
+Stage 3: Arrest and Remand
+Stage 4: Bail Hearing
+Stage 5: Chargesheet / Final Report filed in Court
+Stage 6: Cognizance by Magistrate
+Stage 7: Committal to Sessions (for Sessions trial)
+Stage 8: Charge Framing; Accused's Plea
+Stage 9: Prosecution Evidence
+Stage 10: Section 313 Examination
+Stage 11: Defence Evidence
+Stage 12: Arguments
+Stage 13: Judgment (Acquittal or Conviction)
+Stage 14: Sentencing
+Stage 15: Appeal (optional)
+
+=== BAIL IN DETAIL ===
+
+Bail is the temporary release of an accused pending investigation or trial, on executing a bail bond with or without surety.
+
+Application for Bail – Who to approach:
+- Police station (for bailable offences during investigation).
+- Magistrate Court – for offences triable by Magistrate.
+- Sessions Court – for offences exclusively triable by Sessions Court or when Magistrate has refused bail.
+- High Court – if Sessions Court has refused bail (Section 439, CrPC).
+- Anticipatory Bail: Sessions Court or High Court, before arrest.
+
+Documents for Bail Application:
+1. Bail application/petition.
+2. Surety declaration with ID proof and property documents.
+3. Copy of FIR.
+4. Brief facts of the case.
+
+Factors court considers for bail:
+- Gravity and nature of the offence.
+- Criminal antecedents of the accused.
+- Prima facie case against the accused.
+- Risk of the accused fleeing.
+- Risk of tampering with witnesses or evidence.
+- Whether the accused has roots in the community (family, property, employment).
+
+Cancellation of Bail (Section 437(5) / 439(2) CrPC):
+Bail can be cancelled if the accused:
+- Violates bail conditions.
+- Tampers with evidence or witnesses.
+- Does not appear in court.
+- Is involved in a fresh offence.
+
+=== APPEAL PROCEDURE ===
+
+An appeal is a challenge to a lower court's decision before a higher court.
+
+Types of Appeals (Criminal):
+1. Appeal against Acquittal: Filed by the State (Public Prosecutor) before Sessions Court or High Court. Private complainant can also appeal with court's leave.
+2. Appeal against Conviction: Filed by the accused before Sessions Court (from Magistrate), High Court (from Sessions Court), or Supreme Court.
+3. Appeal against Excessive / Inadequate Sentence: Both State and accused can appeal against sentence.
+
+Types of Appeals (Civil):
+1. First Appeal: On questions of both fact and law; before the next higher court.
+2. Second Appeal (Section 100 CPC): Before the High Court; only on a substantial question of law.
+3. Letters Patent Appeal: Before a Full Bench of the High Court against a single judge's judgment (applicable in some High Courts).
+4. Special Leave Petition (SLP – Article 136, Constitution): Before the Supreme Court against any court or tribunal's judgment.
+
+Time Limits for Appeals (Limitation Act, 1963):
+- 30 days: Appeal from lower court to Sessions Court / District Court.
+- 90 days: Appeal to High Court.
+- 90 days: Appeal to Supreme Court (SLP).
+- Condonation of delay: Court may excuse delay if sufficient cause shown.
+
+=== ALTERNATIVE DISPUTE RESOLUTION (ADR) ===
+
+ADR methods settle disputes without full litigation:
+
+1. MEDIATION: Neutral mediator helps parties reach mutually agreeable settlement. Court-referred or private. Not binding unless agreement is recorded.
+
+2. ARBITRATION: Parties refer dispute to a private arbitrator whose decision (award) is binding. Governed by the Arbitration and Conciliation Act, 1996.
+
+3. LOK ADALAT (Section 19–22, Legal Services Authorities Act, 1987):
+   - People's Court for amicable settlement.
+   - No court fees (refunded if matter is settled from court referral).
+   - Award of Lok Adalat is a decree of a civil court and binding. No appeal lies.
+   - Pre-litigation Lok Adalat available for cases not yet filed.
+
+4. CONCILIATION: Similar to mediation; conciliator may propose terms. Governed by Part III of Arbitration and Conciliation Act.
+
+5. NEGOTIATION: Direct discussion between parties; no third party involved.
+
+=== LIMITATION PERIOD ===
+
+The Limitation Act, 1963 sets time limits within which legal action must be brought.
+Common examples:
+- Suit for recovery of money: 3 years from date of default.
+- Suit for recovery of immovable property: 12 years (6 years if against government).
+- Complaint under Section 138, Negotiable Instruments Act (cheque bounce): 30 days from date of receiving notice after cheque dishonour.
+- Consumer complaint: 2 years from date of cause of action.
+After the limitation period, the right to sue is extinguished (time-barred).
+
+=== EXECUTION OF DECREE (ORDER 21, CPC) ===
+
+If the losing party does not comply with the decree, the decree-holder files an Execution Petition.
+Modes of execution:
+1. Attachment and sale of property (movable and immovable).
+2. Arrest and detention of judgment debtor in civil prison (for money decrees).
+3. Delivery of possession (for property disputes).
+4. Attachment of salary or bank account (garnishee order).
+5. Injunction enforcement (contempt of court if violated).
+
+Court for execution: The court that passed the decree, or the court in whose jurisdiction the property / judgment debtor is located.
+
+=== CONTEMPT OF COURT ===
+
+Contempt of Court Act, 1971:
+Civil Contempt: Wilful disobedience of court order / judgment / decree.
+Criminal Contempt: Scandalising the court, prejudicing ongoing proceedings, obstructing court administration.
+
+Punishment: Up to 6 months imprisonment OR fine up to ₹2000, or both.
+High Courts and Supreme Court have inherent contempt jurisdiction.

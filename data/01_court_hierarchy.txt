@@ -1,0 +1,60 @@
+DOCUMENT: Indian Court Hierarchy and Structure
+SOURCE: Judicial Process Overview – Indian Legal System
+
+=== COURT HIERARCHY IN INDIA ===
+
+India follows a four-tier court hierarchy for civil and criminal matters:
+
+1. SUPREME COURT OF INDIA
+   - Highest court in the land; located in New Delhi.
+   - Established under Article 124 of the Constitution.
+   - Has original, appellate, and advisory jurisdiction.
+   - Hears appeals from High Courts; handles constitutional matters.
+   - Decisions are binding on all courts in India.
+   - Chief Justice of India heads the Supreme Court.
+
+2. HIGH COURTS
+   - One or more per state; Article 214 of the Constitution.
+   - Hears appeals from Sessions Courts (criminal) and District Courts (civil).
+   - Has original jurisdiction in some matters (e.g., writ jurisdiction under Article 226).
+   - Supervises all subordinate courts within its jurisdiction.
+   - Examples: Bombay High Court, Delhi High Court, Madras High Court.
+
+3. DISTRICT COURTS / SESSIONS COURTS
+   - Presided over by District Judge (civil) / Sessions Judge (criminal).
+   - District Court is the principal civil court of original jurisdiction per district.
+   - Sessions Court handles serious criminal offences (Sessions cases).
+   - Hear appeals from Magistrates' Courts and Munsiff Courts.
+
+4. SUBORDINATE / LOWER COURTS
+   - Civil side: Munsiff Courts / Civil Judge Courts (Junior Division / Senior Division).
+   - Criminal side: Judicial Magistrate Courts (First Class, Second Class).
+     - Chief Judicial Magistrate (CJM) heads criminal subordinate courts.
+     - Metropolitan Magistrates in metropolitan areas.
+   - Family Courts handle matrimonial disputes.
+   - Labour Courts, Consumer Forums, Lok Adalats are specialised forums.
+
+=== SPECIALISED TRIBUNALS ===
+
+- National Company Law Tribunal (NCLT) – corporate insolvency matters.
+- Income Tax Appellate Tribunal (ITAT) – tax disputes.
+- National Green Tribunal (NGT) – environmental cases.
+- Armed Forces Tribunal – disputes related to armed forces.
+- Consumer Disputes Redressal Commission (District, State, National).
+- Fast Track Courts – established for speedy disposal of serious crimes.
+- Debt Recovery Tribunals (DRT) – bank debt recovery.
+
+=== JURISDICTION CONCEPTS ===
+
+Original Jurisdiction: The court hears a case for the first time.
+Appellate Jurisdiction: The court hears appeals against lower court decisions.
+Territorial Jurisdiction: A court can only hear cases within its geographical area.
+Pecuniary Jurisdiction: Civil courts have monetary limits on the value of suits they can hear.
+  - Munsiff / Junior Civil Judge: suits up to a prescribed limit (varies by state, often ₹1–3 lakh).
+  - Senior Civil Judge: up to the district court limit.
+  - District Court: unlimited pecuniary jurisdiction.
+Subject-matter Jurisdiction: Some courts are limited to specific types of cases.
+
+=== IMPORTANT NOTE ===
+All civil matters are governed primarily by the Code of Civil Procedure, 1908 (CPC).
+All criminal matters are governed by the Code of Criminal Procedure, 1973 (CrPC).

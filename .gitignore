@@ -1,0 +1,35 @@
+# ── Secrets ───────────────────────────────────────────────
+.env                    # Your real API key — NEVER commit this
+
+# ── Vector Store (rebuilt automatically on first run) ─────
+faiss_index/            # Local FAISS vector database
+
+# ── Embedding model cache (downloaded automatically) ──────
+.cache/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ── Python virtual environments ───────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── OS junk ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── Streamlit ─────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Temp / uploaded files ─────────────────────────────────
+uploaded_docs/
+tmp/
+*.tmp
