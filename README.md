@@ -1,122 +1,101 @@
 # ⚖️ Judicial Court Process & Case Flow Explainer Bot
 
-A **Retrieval-Augmented Generation (RAG)** chatbot that explains Indian judicial court procedures, case flow stages, and filing steps. Powered by **OpenRouter LLMs** and **local HuggingFace embeddings** — no Google API quota concerns.
+> An AI-powered RAG chatbot that explains Indian court procedures, case stages, and legal processes — powered by OpenRouter LLMs and a locally-indexed judicial knowledge base.
 
-> ⚠️ **This tool explains procedural workflows only. It is NOT a substitute for legal counsel.**
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.32+-red?logo=streamlit)](https://streamlit.io)
+[![LangChain](https://img.shields.io/badge/LangChain-0.2+-green)](https://langchain.com)
+[![OpenRouter](https://img.shields.io/badge/LLM-OpenRouter-orange)](https://openrouter.ai)
 
 ---
 
-## 🧠 Architecture
+## 🧠 Overview
 
-```
-PDF Documents  ──►  PyPDFLoader  ──►  RecursiveCharacterTextSplitter (1000/200)
-                                              │
-                                    HuggingFaceEmbeddings
-                                    (all-MiniLM-L6-v2, local)
-                                              │
-                                         FAISS Index  ◄──── Vector Store
-                                              │
-User Question  ──►  Retriever (top-4 chunks) ─┘
-                         │
-                    ChatOpenAI via OpenRouter  ──►  Answer + Source Attribution
-```
+This project implements a **Retrieval-Augmented Generation (RAG)** pipeline to answer questions about the Indian judicial system. The bot retrieves relevant passages from a pre-built knowledge base (CPC, CrPC, court stages, bail, appeals, legal terminology) and uses an LLM to generate concise, cited answers — with strict guardrails that prevent legal advice.
 
-| Component | Technology |
+---
+
+## 🔑 Key Features
+
+- **RAG Pipeline** — LangChain + FAISS vector search with source attribution (document name + section)
+- **Pre-built Knowledge Base** — 6 curated `.txt` files covering Indian court hierarchy, civil/criminal procedures, hearings, bail, appeals, and legal terminology
+- **Strict Guardrails** — System prompt enforces procedural-only answers; refuses legal advice, outcome predictions, or lawyer impersonation
+- **Local Embeddings** — FastEmbed (`BAAI/bge-small-en-v1.5`, ONNX) runs offline with zero API cost
+- **Chat Interface** — Streamlit UI with message history, source expanders, and 8 clickable suggestion chips
+- **PDF Extension** — Optional sidebar uploader to extend the knowledge base with custom PDFs
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
 |---|---|
-| UI | Streamlit |
-| LLM | OpenRouter (any model: DeepSeek, LLaMA, Mistral…) |
-| Embeddings | `sentence-transformers/all-MiniLM-L6-v2` (local, free) |
-| Vector Store | FAISS CPU |
-| Orchestration | LangChain |
+| Frontend | Streamlit |
+| LLM | DeepSeek Chat via OpenRouter API |
+| RAG Framework | LangChain |
+| Embeddings | FastEmbed (`BAAI/bge-small-en-v1.5`) — ONNX, local |
+| Vector Store | FAISS (CPU) |
+| Document Parsing | LangChain PyPDFLoader + TextLoader |
+| Text Splitting | RecursiveCharacterTextSplitter (1000 / 200 overlap) |
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
-### 1. Prerequisites
-- Python 3.10+
-- An [OpenRouter API key](https://openrouter.ai) (free tier available)
-
-### 2. Install dependencies
+### 1. Install dependencies
 ```bash
-cd "Judicial-Explainer-Bot"
 pip install -r requirements.txt
 ```
-> The HuggingFace embedding model (~80MB) is downloaded automatically on first run.
 
-### 3. Set your API key
+### 2. Configure API key
 ```bash
-# Copy the example file
-copy .env.example .env
-
-# Edit .env and paste your OpenRouter key:
-# OPENROUTER_API_KEY=sk-or-...
+# Create a .env file
+echo "OPENROUTER_API_KEY=your_key_here" > .env
 ```
+> Get a free key at [openrouter.ai](https://openrouter.ai)
 
-### 4. Run the app
+### 3. Run the app
 ```bash
 streamlit run app.py
 ```
-The app opens at **http://localhost:8501**
+
+The app auto-builds the FAISS index from the built-in knowledge base on first launch (downloads ~66MB ONNX model once, then cached locally).
 
 ---
 
-## 📖 How to Use
-
-1. **Enter your OpenRouter API Key** in the sidebar
-2. **Select a model** from the dropdown (default: `deepseek/deepseek-chat`)
-3. **Upload PDF documents** (CPC, CrPC, Judicial Manuals, etc.)
-4. Click **"Process & Index Documents"** — waits ~30s on first run to download the embedding model
-5. **Ask questions** about court procedures in the chat window
-6. Each answer shows a **📄 Sources** expander listing the document name and page number
-
----
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 Judicial-Explainer-Bot/
-├── app.py          # Streamlit UI
-├── ingest.py       # PDF loading, chunking, FAISS indexing
-├── rag.py          # OpenRouter LLM chain + guardrails
+├── app.py              # Streamlit UI
+├── rag.py              # RAG chain (LangChain + OpenRouter)
+├── ingest.py           # Document ingestion & FAISS indexing
+├── data/               # Built-in judicial knowledge base
+│   ├── 01_court_hierarchy.txt
+│   ├── 02_civil_case_filing.txt
+│   ├── 03_criminal_case_process.txt
+│   ├── 04_court_hearings.txt
+│   ├── 05_legal_terminology.txt
+│   └── 06_stages_appeals_bail.txt
 ├── requirements.txt
-├── .env.example    # API key template
-├── .env            # Your actual keys (git-ignored)
-├── faiss_index/    # Auto-created: local vector database
-└── uploaded_docs/  # (Optional) store your PDFs here
+└── .env.example
 ```
 
 ---
 
-## 🔒 Guardrails
+## 📚 Knowledge Base Coverage
 
-The system prompt strictly enforces:
-- ✅ Explain court procedures, case stages, filing steps
-- ❌ No legal advice
-- ❌ No case outcome predictions
-- ❌ No lawyer impersonation
-- ✅ Always cite source document + page number
-
----
-
-## 🔑 Available OpenRouter Models
-
-| Model | Notes |
+| File | Indian Law Referenced |
 |---|---|
-| `deepseek/deepseek-chat` | Excellent default, very affordable |
-| `deepseek/deepseek-r1` | Strongest reasoning |
-| `meta-llama/llama-3.3-70b-instruct` | High quality open model |
-| `mistralai/mistral-7b-instruct` | Fast and lightweight |
-| `google/gemma-3-27b-it:free` | Free tier option |
+| Court Hierarchy | Constitution of India (Art. 124, 214, 226) |
+| Civil Filing | Code of Civil Procedure, 1908 (CPC) |
+| Criminal Process | Code of Criminal Procedure, 1973 (CrPC) |
+| Court Hearings | CPC + CrPC procedures |
+| Legal Terminology | CPC, CrPC, Constitution Art. 32 & 226 |
+| Stages, Bail, Appeals | CrPC, Limitation Act 1963, Legal Services Authorities Act 1987 |
 
 ---
 
-## ⚙️ Configuration
+## ⚠️ Disclaimer
 
-| Parameter | Value | Location |
-|---|---|---|
-| Chunk size | 1000 chars | `ingest.py` |
-| Chunk overlap | 200 chars | `ingest.py` |
-| Top-k retrieval | 4 chunks | `rag.py` |
-| LLM temperature | 0.2 | `rag.py` |
-| Embedding model | `all-MiniLM-L6-v2` | `ingest.py` |
+This application explains procedural workflows only. It is **not** a substitute for legal counsel. Always consult a qualified advocate for legal advice.
