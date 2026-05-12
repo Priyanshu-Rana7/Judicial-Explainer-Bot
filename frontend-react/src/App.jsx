@@ -125,7 +125,7 @@ function App() {
       const response = await axios.post(`${API_BASE}/chat`, {
         message: messageText,
         history: history
-      });
+      }, { timeout: 60000 }); // Wait up to 60s for cloud models
 
       setAgentStatus('FINALIZING RESPONSE...');
       setTimeout(() => setAgentStatus(''), 500);

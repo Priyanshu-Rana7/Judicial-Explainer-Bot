@@ -61,6 +61,16 @@ async def startup_event():
     global vector_store
     print("Initializing hardened vector store...")
     vector_store = seed_builtin_index()
+    
+    # ── PRE-WARM HUGGINGFACE ──────────────────────────────────────────────────
+    # This wakes up the model in the cloud so the user doesn't wait 60s
+    if vector_store:
+        print("Pre-warming cloud embedding model...")
+        try:
+            vector_store.embeddings.embed_query("warmup")
+            print("Cloud model is READY.")
+        except Exception as e:
+            print(f"[WARN] Pre-warm failed (normal if model is still loading): {e}")
 
 class ChatRequest(BaseModel):
     message: str
