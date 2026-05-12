@@ -25,12 +25,22 @@ app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 # ── 1. STRICT CORS CONFIGURATION ──────────────────────────────────────────────
-# In production, set ALLOWED_ORIGINS to your Vercel URL (e.g., https://app.vercel.app)
-allowed_origins = os.getenv("ALLOWED_ORIGINS", "*").split(",")
+allowed_origins = [
+    "https://judicial-explainer-bot.vercel.app",
+    "http://localhost:5173",
+    "http://localhost:3000"
+]
+
+# Support dynamic origins from ENV if provided
+env_origins = os.getenv("ALLOWED_ORIGINS")
+if env_origins:
+    allowed_origins.extend(env_origins.split(","))
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
-    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_credentials=True,
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 

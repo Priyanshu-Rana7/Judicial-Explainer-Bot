@@ -21,9 +21,11 @@ DATA_DIR        = "data"          # Built-in knowledge base directory
 
 def get_embeddings() -> HuggingFaceInferenceAPIEmbeddings:
     """Return a Cloud-based embedding model to save RAM on Render."""
-    api_key = os.getenv("HUGGINGFACE_API_KEY")
+    # Support both common names for the HF Token
+    api_key = os.getenv("HUGGINGFACE_API_KEY") or os.getenv("HUGGINGFACEHUB_API_TOKEN")
+    
     if not api_key:
-        print("[WARN] HUGGINGFACE_API_KEY missing. Falling back to local (might crash).")
+        print("[WARN] HuggingFace API Token missing. Falling back to local (might crash).")
         from langchain_community.embeddings import FastEmbedEmbeddings
         return FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5", threads=1)
     

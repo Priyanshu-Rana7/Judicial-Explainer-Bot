@@ -60,7 +60,7 @@ const CaseFlow = ({ stages }) => {
   );
 };
 
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8000";
+const API_BASE = (import.meta.env.VITE_API_BASE || "http://localhost:8000").replace(/\/$/, "");
 
 function App() {
   const [messages, setMessages] = useState([
@@ -140,9 +140,10 @@ function App() {
       setMessages(prev => [...prev, assistantMsg]);
     } catch (error) {
       setAgentStatus('');
+      const errorDetail = error.response?.data?.detail || error.message || "Unknown Connection Error";
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: "Error connecting to the judicial database.",
+        content: `⚠️ **System Error**: ${errorDetail}. Please check your Render logs and API keys.`,
         id: Date.now() + 1
       }]);
     } finally {
