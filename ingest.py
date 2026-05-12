@@ -22,8 +22,12 @@ DATA_DIR        = "data"          # Built-in knowledge base directory
 
 
 def get_embeddings() -> FastEmbedEmbeddings:
-    """Return a FastEmbedEmbeddings instance (ONNX-based, no PyTorch needed)."""
-    return FastEmbedEmbeddings(model_name=FASTEMBED_MODEL)
+    """Return a memory-optimized FastEmbed instance."""
+    # We use a very small model and limit threads to save RAM on Render
+    return FastEmbedEmbeddings(
+        model_name="BAAI/bge-small-en-v1.5",
+        threads=1 # Critical for 512MB RAM
+    )
 
 
 def _split_documents(docs: list) -> list:

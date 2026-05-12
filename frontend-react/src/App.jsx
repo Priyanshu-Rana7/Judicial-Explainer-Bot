@@ -72,6 +72,7 @@ function App() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [agentStatus, setAgentStatus] = useState('');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Mobile toggle
   const chatEndRef = useRef(null);
 
   const handleFileUpload = async (e) => {
@@ -224,13 +225,30 @@ function App() {
       <ReactiveBackground />
       
       <div className="app-shell">
-        <aside className="sidebar">
+        <AnimatePresence>
+          {isSidebarOpen && (
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="sidebar-overlay"
+              onClick={() => setIsSidebarOpen(false)}
+            />
+          )}
+        </AnimatePresence>
+
+        <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
           <div className="sidebar-header">
             <div className="logo">
               <Scale size={24} color="#fff" />
               <span>JUDICIAL AI</span>
             </div>
+            {/* Mobile close button */}
+            <button className="menu-toggle" onClick={() => setIsSidebarOpen(false)} style={{ marginRight: 0 }}>
+              <X size={18} />
+            </button>
           </div>
+          {/* ... existing sidebar content ... */}
 
           <div className="sidebar-content">
             <div className="info-card">
@@ -282,11 +300,16 @@ function App() {
 
         <main className="chat-container">
           <header className="chat-header">
-            <div className="header-left">
-              <h1>PROCESS DASHBOARD</h1>
-              <div className="status">
-                <div className="status-dot"></div>
-                <span>LOCAL INSTANCE READY</span>
+            <div className="header-left" style={{ display: 'flex', alignItems: 'center' }}>
+              <button className="menu-toggle" onClick={() => setIsSidebarOpen(true)}>
+                <Menu size={20} />
+              </button>
+              <div>
+                <h1>PROCESS DASHBOARD</h1>
+                <div className="status">
+                  <div className="status-dot"></div>
+                  <span>LOCAL INSTANCE READY</span>
+                </div>
               </div>
             </div>
             <div className="header-right">
