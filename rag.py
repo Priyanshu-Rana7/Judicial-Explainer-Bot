@@ -119,9 +119,18 @@ def get_answer_with_sources(
             return "I am a specialized Judicial Process Explainer. I only provide procedural information based on official manuals.", [], []
     except: pass
 
-    # 2. RETRIEVAL
-    retriever = vector_store.as_retriever(search_kwargs={"k": k})
-    source_docs = retriever.invoke(question)
+    # 2. RETRIEVAL (The likely crash point)
+    try:
+        retriever = vector_store.as_retriever(search_kwargs={"k": k})
+        source_docs = retriever.invoke(question)
+    except Exception as e:
+        error_msg = str(e)
+        if "401" in error_msg or "Unauthorized" in error_msg:
+            return "⚠️ **HuggingFace Error**: Your HUGGINGFACE_API_KEY is invalid or unauthorized. Please check your Render environment variables.", [], []
+        if "503" in error_msg or "loading" in error_msg.lower():
+            return "⚠️ **HuggingFace Error**: The embedding model is still loading in the cloud. Please wait 30 seconds and try again.", [], []
+        raise Exception(f"Embedding Service Error: {error_msg}")
+
     context = format_context(source_docs)
     lessons = get_feedback_lessons()
 
