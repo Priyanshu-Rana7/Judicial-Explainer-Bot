@@ -29,9 +29,12 @@ def get_embeddings() -> HuggingFaceInferenceAPIEmbeddings:
         from langchain_community.embeddings import FastEmbedEmbeddings
         return FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5", threads=1)
     
+    # We use the official Inference API class which is more stable
+    # The X-Wait-For-Model header tells HF to wait up to 60s if the model is loading
     return HuggingFaceInferenceAPIEmbeddings(
         api_key=api_key,
-        model_name="BAAI/bge-small-en-v1.5"
+        model_name="BAAI/bge-small-en-v1.5",
+        additional_headers={"X-Wait-For-Model": "true"} 
     )
 
 
