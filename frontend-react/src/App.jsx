@@ -292,7 +292,7 @@ function App() {
 
           <div className="sidebar-footer">
             <div className="disclaimer-mini">
-              <p>© 2024 JUDICIAL AI EXPLAINER</p>
+              <p>© 2026 JUDICIAL AI EXPLAINER</p>
               <p>PROCEDURAL GUIDANCE ONLY</p>
             </div>
           </div>
@@ -399,7 +399,7 @@ function App() {
             </div>
             <div className="input-wrapper">
               <textarea 
-                placeholder="Query judicial database..." 
+                placeholder="Ask anything legal..." 
                 rows="1"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
