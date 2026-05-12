@@ -61,10 +61,16 @@ def get_feedback_lessons() -> str:
         try:
             with open(log_path, "r", encoding="utf-8") as f:
                 for line in f:
-                    entry = json.loads(line)
-                    if entry.get("rating") == "neg":
-                        lessons.append(f"User asked: {entry.get('question')}\nYou replied: {entry.get('answer')}\nCRITIQUE: Response flagged. Avoid this style.")
-        except: pass
+                    line = line.strip()
+                    if not line: continue # Skip empty lines
+                    try:
+                        entry = json.loads(line)
+                        if entry.get("rating") == "neg":
+                            lessons.append(f"User asked: {entry.get('question')}\nYou replied: {entry.get('answer')}\nCRITIQUE: Response flagged. Avoid this style.")
+                    except json.JSONDecodeError:
+                        continue # Skip corrupt lines
+        except Exception: 
+            pass
     if not lessons: return ""
     recent_lessons = "\n\n".join(lessons[-5:])
     return f"\n### LESSONS FROM PAST FAILURES:\n{recent_lessons}"
