@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judicial Explainer Bot | AI-Powered Court Process Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-gradient"></div>
+    <div class="glass-overlay"></div>
+
+    <div class="app-shell">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Judicial Explainer</span>
+                </div>
+            </div>
+
+            <div class="sidebar-content">
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-circle-info"></i> How it works</h3>
+                    <p>Ask about filing procedures, summons, bail, or court stages in India. I use RAG to fetch official manual data.</p>
+                </div>
+
+                <div class="suggested-topics">
+                    <h4><i class="fa-solid fa-lightbulb"></i> Suggested Topics</h4>
+                    <button class="topic-chip" onclick="setQuestion('How does bail work in India?')">Bail Process</button>
+                    <button class="topic-chip" onclick="setQuestion('Stages of a civil suit')">Civil Suit Stages</button>
+                    <button class="topic-chip" onclick="setQuestion('What is a summons?')">Summons & Service</button>
+                    <button class="topic-chip" onclick="setQuestion('Process of filing an FIR')">FIR Filing</button>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="disclaimer-mini">
+                    <p>⚠️ Procedural guidance only. Not a substitute for a lawyer.</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="chat-container">
+            <header class="chat-header">
+                <div class="header-left">
+                    <h1>Court Process Explainer</h1>
+                    <div class="status">
+                        <span class="status-dot"></span>
+                        <span>AI Agent Online</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button id="clear-chat" title="Clear Conversation">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div id="chat-messages" class="chat-messages">
+                <div class="message assistant animate-in">
+                    <div class="message-content">
+                        <p>Welcome to the <strong>Judicial Court Process & Case Flow Explainer</strong>. How can I help you navigate the Indian court system today?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="disclaimer-banner">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    This AI strictly refuses to give legal advice or predict case outcomes.
+                </div>
+                <div class="input-wrapper">
+                    <textarea id="user-input" placeholder="Describe a court process or ask a question..." rows="1"></textarea>
+                    <button id="send-btn" class="send-btn" disabled>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
