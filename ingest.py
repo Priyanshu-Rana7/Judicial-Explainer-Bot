@@ -121,21 +121,19 @@ def load_vector_store(index_path: str = INDEX_PATH) -> FAISS | None:
 
 def seed_builtin_index() -> FAISS | None:
     """
-    Build the FAISS index from the built-in knowledge base if it doesn't exist.
-    Called automatically on app startup.
-    Returns the vector store, or None if no data found.
+    Load the FAISS index if it exists on disk.
+    If not, attempt to build it from the data/ directory (Memory intensive).
     """
     if os.path.exists(INDEX_PATH):
+        print(f"[INFO] Loading existing FAISS index from '{INDEX_PATH}'...")
         return load_vector_store(INDEX_PATH)
 
-    print("[INFO] No existing FAISS index found. Building from built-in knowledge base...")
+    print("[INFO] No index found. Checking for built-in knowledge in 'data/'...")
     chunks = load_builtin_knowledge()
-
     if not chunks:
-        print(f"[WARN] No .txt files found in '{DATA_DIR}/' directory.")
+        print(f"[WARN] No knowledge base found to index.")
         return None
 
-    print(f"[INFO] Indexing {len(chunks)} chunks from {DATA_DIR}/ ...")
+    print(f"[INFO] Indexing {len(chunks)} chunks... (WARNING: This may exceed memory on free-tier cloud)")
     vector_store = build_or_update_index(chunks, INDEX_PATH)
-    print("[INFO] Built-in knowledge base indexed successfully.")
     return vector_store
