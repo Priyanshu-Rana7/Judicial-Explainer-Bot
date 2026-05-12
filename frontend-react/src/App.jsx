@@ -13,7 +13,9 @@ import {
   FileText,
   Upload,
   ChevronRight,
-  Languages
+  Languages,
+  Menu,
+  X
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ReactiveBackground from './components/ReactiveBackground';
@@ -221,7 +223,7 @@ function App() {
   };
 
   return (
-    <div className="main-wrapper" style={{ width: '100%', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <>
       <ReactiveBackground />
       
       <div className="app-shell">
@@ -243,12 +245,10 @@ function App() {
               <Scale size={24} color="#fff" />
               <span>JUDICIAL AI</span>
             </div>
-            {/* Mobile close button */}
-            <button className="menu-toggle" onClick={() => setIsSidebarOpen(false)} style={{ marginRight: 0 }}>
+            <button className="menu-toggle" onClick={() => setIsSidebarOpen(false)}>
               <X size={18} />
             </button>
           </div>
-          {/* ... existing sidebar content ... */}
 
           <div className="sidebar-content">
             <div className="info-card">
@@ -361,13 +361,6 @@ function App() {
                         <button onClick={() => sendFeedback(msg.id, 'neg')}><ThumbsDown size={12} /></button>
                       </div>
                     )}
-                    {msg.feedbackGiven && (
-                      <div className="feedback-tools">
-                        <span style={{ fontSize: '0.75rem', color: 'var(--primary)' }}>
-                          Feedback saved! {msg.feedbackGiven === 'pos' ? '👍' : '👎'}
-                        </span>
-                      </div>
-                    )}
                   </div>
 
                   <CaseFlow stages={msg.flow} />
@@ -428,7 +421,7 @@ function App() {
           </div>
         </main>
       </div>
-    </div>
+    </>
   );
 }
 
