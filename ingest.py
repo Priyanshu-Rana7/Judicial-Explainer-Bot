@@ -9,24 +9,27 @@ from pathlib import Path
 
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import FastEmbedEmbeddings
+from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
 from langchain_community.vectorstores import FAISS
 
 # ── Constants ─────────────────────────────────────────────────────────────────
-# FastEmbed uses ONNX runtime — no PyTorch required, no torch version conflicts.
-FASTEMBED_MODEL = "BAAI/bge-small-en-v1.5"   # ~130MB, downloaded once to ~/.cache
 CHUNK_SIZE      = 1000
 CHUNK_OVERLAP   = 200
 INDEX_PATH      = "faiss_index"
 DATA_DIR        = "data"          # Built-in knowledge base directory
 
 
-def get_embeddings() -> FastEmbedEmbeddings:
-    """Return a memory-optimized FastEmbed instance."""
-    # We use a very small model and limit threads to save RAM on Render
-    return FastEmbedEmbeddings(
-        model_name="BAAI/bge-small-en-v1.5",
-        threads=1 # Critical for 512MB RAM
+def get_embeddings() -> HuggingFaceInferenceAPIEmbeddings:
+    """Return a Cloud-based embedding model to save RAM on Render."""
+    api_key = os.getenv("HUGGINGFACE_API_KEY")
+    if not api_key:
+        print("[WARN] HUGGINGFACE_API_KEY missing. Falling back to local (might crash).")
+        from langchain_community.embeddings import FastEmbedEmbeddings
+        return FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5", threads=1)
+    
+    return HuggingFaceInferenceAPIEmbeddings(
+        api_key=api_key,
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
 
 

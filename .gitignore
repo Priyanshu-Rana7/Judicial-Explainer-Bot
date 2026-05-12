@@ -11,7 +11,7 @@ env/
 temp_*
 feedback_log.jsonl
 *.log
-faiss_index/
+# faiss_index/ is tracked for cloud deployment
 
 # Node.js (React)
 frontend-react/node_modules/
